@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* background: white; */
   box-sizing: border-box;
   color: #33294e;
 
@@ -13,6 +12,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: white;
 }
 
 h1 {
@@ -50,7 +50,6 @@ a:visited {
 a:hover {
   color: #9c1f64;
   text-decoration: none;
-  transform: rotate(60deg);
 }
 
 a:active {
@@ -60,6 +59,7 @@ a:active {
 
 header {
   color: #33294e;
+  background: transparent;
 }
 
 /* sticky navbar */
@@ -84,6 +84,7 @@ nav {
   font-size: 1.5rem;
   color: #33294e;
   padding: 0 0 0 0;
+  
 }
 
 .nav-links {
@@ -128,6 +129,11 @@ p {
 }
 
 #what {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center
+  ;
 }
 
 #where {
