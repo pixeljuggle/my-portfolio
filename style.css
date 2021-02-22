@@ -177,7 +177,7 @@ p {
   background: #dcd6e8;
   border-radius: 13px;
   height: 15px;
-  width: 10vw;
+  width: 15vw;
   margin-left: 20px;
 }
 
@@ -207,11 +207,10 @@ p {
 }
 
 .icon-link {
-  transform: rotate(0deg) scale(1.5);
+  width: 80px;
 }
 
 .icon-link:hover {
-  transform: rotate(0deg) scale(1.5);
   animation: icon-hover 0.3s ease-in-out forwards 1;
 }
 
@@ -244,11 +243,49 @@ button:focus {
   align-self: flex-end;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    padding: 2rem 0 1rem 0;
+    line-height: 2.2rem;
+  }
+  nav {
+    padding: 0rem 5vw;
+  }
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    font-size: 1rem;
+  }
+  
+  .nav-links li {
+    padding-left: 1rem;
+  }
+
+  section {
+    padding: 0 10vw;
+  }
+
+  .progress-container {
+    width: 150px;
+  }
+
+  #where ul {
+    width: 60vw;
+  }
+
+  .icon-link {
+    width: 50px;
+  }
+}
+
+
 @keyframes icon-hover {
   0% {
-    transform: rotate(0deg) scale(1.5);
+    transform: rotate(0deg) scale(1);
   }
   100% {
-    transform: rotate(4deg) scale(2);
+    transform: rotate(4deg) scale(1.5);
   }
 }
