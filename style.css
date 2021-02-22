@@ -97,6 +97,10 @@ nav {
   color: #33294e;
   padding: 0 0 0 0;
 }
+.nav-logo a:hover {
+  color: #33294e;
+  text-decoration: none;
+}
 
 .nav-links {
   display: flex;
@@ -162,11 +166,29 @@ p {
   height: 100px;
 }
 .profile-img{
+  object-fit: cover;
   width: 94px;
   border-radius: 50%;
   border: 3px solid white;
 }
 
+.contact-img-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: #72179c;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+.contact-img{
+  object-fit: cover;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
 
 #what {
   display: flex;
@@ -218,6 +240,10 @@ p {
   padding-bottom: 50px;
 }
 
+.icon-links {
+  margin: 30px 0 30px 0;
+}
+
 .icon-link {
   width: 80px;
 }
@@ -226,33 +252,29 @@ p {
   animation: icon-hover 0.3s ease-in-out forwards 1;
 }
 
-button {
+#contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contact-button {
   font-family: "Poppins", sans-serif;
   color: white;
   font-size: 1.1rem;
   border: none;
-  background-color: #4d10ce;
+  background-color: #8e29d1;
   padding: 10px;
   border-radius: 4px;
-}
-button:hover {
-
-  border: none;
-  background-color: #9c1f64;
-}
-
-button:active {
-  border: none;
-  background-color: #e4248e;
-}
-button:focus {
-  border: none;
-  outline: none;
-}
-
-.contact-button {
-  margin-top: 10vh;
   align-self: flex-end;
+}
+
+.contact-button:hover {
+  border: none;
+  background-color: #a07bee;
 }
 
 @media only screen and (max-width: 768px) {
