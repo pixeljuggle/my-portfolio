@@ -250,7 +250,7 @@ button:focus {
   outline: none;
 }
 
-.email-button {
+.contact-button {
   margin-top: 10vh;
   align-self: flex-end;
 }
