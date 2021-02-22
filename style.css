@@ -196,11 +196,35 @@ p {
   animation: icon-hover 0.3s ease-in-out forwards 1;
 }
 
+button {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #4d10ce;
+  padding: 10px;
+  border-radius: 4px;
+}
+button:hover {
+
+  border: none;
+  background-color: #9c1f64;
+}
+
+button:active {
+  border: none;
+  background-color: #e4248e;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
 
 .email-button {
-
-  
+  margin-top: 10vh;
+  align-self: flex-end;
 }
+
 @keyframes icon-hover {
   0% {
     transform: rotate(0deg) scale(1.5);
