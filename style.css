@@ -120,7 +120,7 @@ section {
   padding: 0 20vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -136,14 +136,33 @@ p {
 }
 
 #who {
+
 }
+
+.profile-img-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: #72179c;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+.profile-img{
+  width: 94px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
 
 #what {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  align-content: center;
 }
 
 #what li {
