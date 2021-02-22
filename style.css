@@ -10,3 +10,64 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+a:link {
+  color: #33294e;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #33294e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9c1f64;
+  text-decoration: none;
+  transform: rotate(60deg);
+}
+
+a:active {
+  color: #33294e;
+  text-decoration: none;
+}
+header {
+  color: #33294e;
+}
+
+.stick {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  font-family: "Fredoka One", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  padding: 0rem 4vw;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  color: #33294e;
+  font-weight: 200;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.nav-links li {
+  padding-left: 3rem;
+  text-decoration: none;
+}
+
+.nav-gradient {
+  height: 7px;
+  background: linear-gradient(90deg, #4d10cf 0%, #9c1f64 100%);
+}
