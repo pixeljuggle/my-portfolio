@@ -3,12 +3,38 @@
 * {
   margin: 0;
   padding: 0;
-  background: white;
+  /* background: white; */
   box-sizing: border-box;
+  color: #33294e;
+
 }
+
+/* typography */
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 200;
+  color: #72179c;
+  font-size: 3rem;
+  padding: 1rem 0 0 0;
+
+}
+
+h2 {
+  padding: 0 0 2rem 0;
+}
+
+a {
+  color: #33294e;
+  text-decoration: none;
+}
+
+article a:link {
+  color: #72179c;
+  text-decoration: none;
 }
 
 a:link {
@@ -31,9 +57,12 @@ a:active {
   color: #33294e;
   text-decoration: none;
 }
+
 header {
   color: #33294e;
 }
+
+/* sticky navbar */
 
 .stick {
   position: sticky;
@@ -46,20 +75,21 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-height: 70px;
-  padding: 0rem 4vw;
+  padding: 0rem 15vw;
+  background: transparent;
+  backdrop-filter: blur(20px);
 }
 
 .nav-logo {
   font-size: 1.5rem;
   color: #33294e;
-  font-weight: 200;
+  padding: 0 0 0 0;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   font-size: 1rem;
-  font-weight: 200;
 }
 
 .nav-links li {
@@ -70,4 +100,36 @@ nav {
 .nav-gradient {
   height: 7px;
   background: linear-gradient(90deg, #4d10cf 0%, #9c1f64 100%);
+}
+
+/* sections and articles */
+
+section {
+  min-height: 100vh;
+  padding: 0 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:flex-start;
+}
+
+article h2 {
+  padding: 0 0 4rem 0;
+}
+
+article {
+}
+
+p {
+  padding-bottom: 2rem;
+}
+
+#who {
+}
+
+#what {
+}
+
+#where {
+
 }
