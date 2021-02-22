@@ -170,3 +170,42 @@ p {
 
 #where {
 }
+
+#where li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#where ul {
+  width: 40vw;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.icon-link {
+  transform: rotate(0deg) scale(1.5);
+}
+
+.icon-link:hover {
+  transform: rotate(0deg) scale(1.5);
+  animation: icon-hover 0.3s ease-in-out forwards 1;
+}
+
+
+.email-button {
+
+  
+}
+@keyframes icon-hover {
+  0% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(4deg) scale(2);
+  }
+}
