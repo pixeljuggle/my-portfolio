@@ -113,6 +113,18 @@ nav {
   background: linear-gradient(90deg, #4d10cf 0%, #9c1f64 100%);
 }
 
+/* parallax page breaks */
+
+.parallax {
+  height: 10px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/img/gradient-1.jpg");
+}
+
+
 /* sections and articles */
 
 section {
