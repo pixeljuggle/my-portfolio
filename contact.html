@@ -16,9 +16,9 @@
       <h1 class="nav-logo"><a href="./">Hello, Im Alex</a></h1>
       <div class="nav-links">
         <ul class="nav-links">
-          <li><a href="#who">who</a></li>
-          <li><a href="#what">what</a></li>
-          <li><a href="#where">where</a></li>
+          <li><a href="./#who">who</a></li>
+          <li><a href="./#what">what</a></li>
+          <li><a href="./#where">where</a></li>
         </ul>
         <a href="./contact.html">
           <div class="nav-icon"></div>
@@ -28,14 +28,28 @@
   </header>
 
   <section id="contact">
-    <div class="contact-img-container">
-      <img class="contact-img" src="./assets/img/bee25169cb721e9d3cc9b78e10e6d7d1-700.jpg" alt="a picture of Alex">
+    <div class="contact-splash">
+      <div class="contact-img-container">
+        <img class="contact-img" src="./assets/img/bee25169cb721e9d3cc9b78e10e6d7d1-700.jpg" alt="a picture of Alex">
+      </div>
+
+      <h1></h1>
     </div>
 
-    <article>
-      <h1>talk to me</h1>
+    <form class="contact-form" autocomplete="off">
 
-    </article>
+      <label for="name">name</label>
+      <input type="text" id="name" name="name" placeholder="Your name .." autocomplete="off">
+
+      <label for="email">email</label>
+      <input type="email" id="email" name="email" placeholder="Your email .." autocomplete="off">
+
+      <label for="chat">words</label>
+      <textarea id="subject" name="subject" placeholder="Words go here .." style="height:200px"></textarea>
+
+      <input type="submit" value="Say it">
+
+    </form>
   </section>
 
   <footer>
