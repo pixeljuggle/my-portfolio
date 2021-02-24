@@ -1,8 +1,4 @@
-let submit = document.getElementById("submit");
-
-let reset = document.getElementById("reset");
-
-submit.addEventListener('click', function (event) {
+function submitForm (){
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let chat = document.getElementById("chat").value;
@@ -12,7 +8,9 @@ But when i do i will use this info:
  ${name}
  ${email}
  " ${chat} "`);
-});
+}
+
+let reset = document.getElementById("reset");
 
 reset.addEventListener("click", function (event) {
   var contactForm = document.getElementById("contact-me").elements;
