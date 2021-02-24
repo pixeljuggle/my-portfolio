@@ -356,15 +356,41 @@ input[type="submit"] {
   background-color: #4808d4;
   padding: 10px;
   border-radius: 50px;
-  width: 50%;
+  width: 40%;
   margin: 30px 0px 30px 0px;
   transition: all 0.2s ease-in-out;
 }
 
 input[type="submit"]:hover {
   background-color: #8e29d1;
+  transform: translateX(10px);
 }
 
+input[type="reset"] {
+  font-family: "Poppins", sans-serif;
+  color: #4808d4;
+  font-size: 1.1rem;
+  border: none;
+  background-color: white;
+  border: 2px solid #4808d4;
+  padding: 10px;
+  border-radius: 50px;
+  width: 40%;
+  margin: 30px 0px 30px 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="reset"]:hover {
+  background-color: #cc0579;
+  border: 2px solid #cc0579;
+  color: white;
+  transform: translateX(-10px);
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-around;
+}
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 3rem;
