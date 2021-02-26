@@ -30,9 +30,9 @@ body {
 #nav-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 15vw 20px 15vw;
 }
 
 #nav-links {
@@ -75,22 +75,42 @@ section {
 }
 
 section h2 {
-  margin: 0px 0vw 20px 0vw;
+  margin: 10px 0vw 30px 0vw;
 }
+
+.card-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
 .card {
   width: 200px;
   height: 270px;
-  border: $primary 4px solid;
-  border-radius: 6px;
+  // border: $primary 4px solid;
+  border-radius: 3px;
   overflow: hidden;
 }
+
+.card-border {
+  width: 208px;
+  height: 278px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: $primary;
+  transition: 1s ease;
+  margin: 10px 10px 20px 10px
+}
+
 
 .card-image-container {
   position: relative;
   height: 200px;
   width: 100%;
-  background-color: blue;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .card-description {
@@ -100,19 +120,12 @@ section h2 {
   right: 0;
   padding: 15px;
   height: 200px;
-  background-color: $highlight-l;
-  backdrop-filter: blur(2px);
   overflow: hidden;
   transform: translateY(200px);
   transition: 0.2s ease;
-}
-
-.card-image-container:hover .card-description {
-  transform: translateY(0px);
-}
-
-.card:hover {
-  border-color: $gradient;
+  pointer-events: none;
+  background: white;
+  opacity: 0%;
 }
 
 .card-title {
@@ -125,4 +138,20 @@ section h2 {
   align-items: center;
   font-size: 18px;
   font-weight: 600;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card:hover .card-description {
+  transform: translateY(0px);
+}
+
+.card-border:hover {
+  background: linear-gradient(90deg, #D00776 0%, #4D10CF 100%);
+}
+
+.card-border:hover .card-description {
+  opacity: 90%;
 }

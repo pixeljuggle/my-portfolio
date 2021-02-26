@@ -29,12 +29,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 15vw 20px 15vw;
 }
 
 #nav-links {
@@ -93,23 +94,51 @@ section {
 }
 
 section h2 {
-  margin: 0px 0vw 20px 0vw;
+  margin: 10px 0vw 30px 0vw;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card {
   width: 200px;
   height: 270px;
-  border: #242424 4px solid;
-  border-radius: 6px;
+  border-radius: 3px;
   overflow: hidden;
+}
+
+.card-border {
+  width: 208px;
+  height: 278px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+  background: #242424;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  margin: 10px 10px 20px 10px;
 }
 
 .card-image-container {
   position: relative;
   height: 200px;
   width: 100%;
-  background-color: blue;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .card-description {
@@ -119,23 +148,14 @@ section h2 {
   right: 0;
   padding: 15px;
   height: 200px;
-  background-color: #f2f2f2e3;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
   overflow: hidden;
   -webkit-transform: translateY(200px);
           transform: translateY(200px);
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-}
-
-.card-image-container:hover .card-description {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-}
-
-.card:hover {
-  border-color: linear-gradient(90deg, #D00776 0%, #4D10CF 100%);
+  pointer-events: none;
+  background: white;
+  opacity: 0%;
 }
 
 .card-title {
@@ -154,5 +174,23 @@ section h2 {
           align-items: center;
   font-size: 18px;
   font-weight: 600;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card:hover .card-description {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.card-border:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#D00776), to(#4D10CF));
+  background: linear-gradient(90deg, #D00776 0%, #4D10CF 100%);
+}
+
+.card-border:hover .card-description {
+  opacity: 90%;
 }
 /*# sourceMappingURL=style.css.map */
