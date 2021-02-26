@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto&family=Poppins');
+
+/* globals */
+:root {
+  --dark-blue: #131b23;
+  --light: #E0E0CE;
+  --medium: #474747;
+  --dark: black;
+  --accent:orangered;
+  --honey: #F2AF29;
+  --button: black;
+  --shadow: #00000020;
+  --card-padding: 0px 20px 10px 20px;
+}
+html {
+  background-color: #f0f0f0;
+}
+
+/* Typography */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: var(--dark-blue);
+  margin: 20px;
+}
+
+article h1 {
+  font-size: 2em;
+}
+p {
+	/* margin-bottom: 1.5em; */
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+.card-content code  {
+  background-color: var(--light);
+}
+
+a:link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--accent);
+  /* text-decoration: none; */
+  text-decoration: line-through;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--accent);
+}
+
+
+img {
+	display: block;
+	border: 0;
+	height: auto;
+}
+
+
+.card {
+	background: white;
+  margin-bottom: 2em;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-flow: column;
+
+}
+
+
+.card-content {
+  padding: 0px 20px 10px 20px;
+  margin: 0px 0px 0px 0px;
+}
+
+.card h2 {
+  padding: 0px 20px 0px 20px;
+}
+
+
+.card p {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.last-row {
+  margin-top:auto;
+}
+
+.dark-highlight {
+  background-color: var(--dark-blue);
+  color: var(--light);
+  font-size: 1.7em;;
+  padding: 10px;
+}
+
+ .example {
+   margin-bottom: 20px;
+ }
+
+ textarea {
+   border: none;
+   width: 100%;
+   height: 8rem;
+   background-color: var(--light);
+   border-radius: 2px;
+  }
+/* button / badge */
+.badge {
+  background-color: var(--dark-blue);
+  color: var(--light);
+  width: fit-content;
+  display: block;
+  padding: 6px 8px 6px 8px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.badge:link {
+  background-color: var(--dark-blue);
+  color: var(--light);
+  text-decoration: none;
+}
+
+.badge:visited {
+  background-color: var(--dark-blue);
+  color: var(--light);
+  text-decoration: none;
+}
+
+.badge:hover {
+  background-color:var(--accent);
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+.badge:active {
+  background-color: var(--dark-blue);
+  color: var(--light);
+  text-decoration: none;
+}
+
+
+/* Flexbox stuff */
+
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 0 1 calc(50% - 1em);
+    }
+}
+
+@media screen and (min-width: 60em) {
+
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}
+
