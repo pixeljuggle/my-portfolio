@@ -18,6 +18,11 @@ body {
   background: #F2F2F2;
 }
 
+.body-dark {
+  font-family: 'Quicksand', sans-serif;
+  color: $secondary;
+  background: $primary;
+}
 .rm-lnk a, 
 .rm-lnk a:link, 
 .rm-lnk a:visited, 
@@ -52,6 +57,12 @@ body {
   letter-spacing: 0.12em;
 }
 
+#nav-links button {
+  background: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
 #nav-links a{
   padding: 15px 20px 15px 20px;
   transition: 0.2s ease;
@@ -87,23 +98,18 @@ flex-wrap: wrap;
 .card {
   width: 200px;
   height: 270px;
-  // border: $primary 4px solid;
   border-radius: 3px;
   overflow: hidden;
 }
 
 .card-border {
-  width: 208px;
-  height: 278px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
   background: $primary;
   transition: 1s ease;
   margin: 10px 10px 20px 10px
 }
-
 
 .card-image-container {
   position: relative;
@@ -154,4 +160,63 @@ flex-wrap: wrap;
 
 .card-border:hover .card-description {
   opacity: 90%;
+}
+
+.gradient-border {
+  --border-width: 3px;
+
+  position: relative;
+  border-radius: var(--border-width);
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: $primary;
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+  }
+}
+
+.gradient-border:hover {
+  --border-width: 3px;
+
+  position: relative;
+  border-radius: var(--border-width);
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
