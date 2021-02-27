@@ -4,13 +4,35 @@
   --primary: #242424;
   --secondary: #f2f2f2;
   --accent: white;
-  --gradient: linear-gradient(90deg, #d00776 0%, #4d10cf 100%);
+  --border-width: 4px;
+  --gradient: linear-gradient(
+    60deg,
+    #3063f0,
+    #ae00ff,
+    #f535c8,
+    #f82529,
+    #f1bd2e,
+    #8ef71e,
+    #25ee54,
+    #26f3f0
+  );
 }
 .theme-dark {
   --primary: #f2f2f2;
   --secondary: #242424;
   --accent: black;
-  --gradient: linear-gradient(90deg, #d00776 0%, #4d10cf 100%);
+  --border-width: 4px;
+  --gradient: linear-gradient(
+    60deg,
+    #5f86f2,
+    #a65ff2,
+    #f25fd0,
+    #f25f61,
+    #f2cb5f,
+    #abf25f,
+    #5ff281,
+    #5ff2f0
+  );
 }
 
 * {
@@ -115,7 +137,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   background: var(--primary);
-  transition: 1s ease;
+  transition: 0.5s ease;
   margin: 10px 10px 20px 10px;
 }
 
@@ -166,7 +188,8 @@ section h2 {
 }
 
 .card-border:hover {
-  background: linear-gradient(90deg, #d00776 0%, #4d10cf 100%);
+  /* background: linear-gradient(90deg, #d00776 0%, #4d10cf 100%); */
+  transform: scale(1.05);
 }
 
 .card-border:hover .card-description {
@@ -174,7 +197,6 @@ section h2 {
 }
 
 .gradient-border {
-  --border-width: 4px;
   position: relative;
   border-radius: var(--border-width);
 }
@@ -194,7 +216,6 @@ section h2 {
 }
 
 .gradient-border:hover {
-  --border-width: 4px;
   position: relative;
   border-radius: var(--border-width);
 }
@@ -207,17 +228,7 @@ section h2 {
   z-index: -1;
   width: calc(100% + var(--border-width) * 2);
   height: calc(100% + var(--border-width) * 2);
-  background: linear-gradient(
-    60deg,
-    #5f86f2,
-    #a65ff2,
-    #f25fd0,
-    #f25f61,
-    #f2cb5f,
-    #abf25f,
-    #5ff281,
-    #5ff2f0
-  );
+  background: var(--gradient);
   background-size: 300% 300%;
   background-position: 0 50%;
   border-radius: calc(2 * var(--border-width));
