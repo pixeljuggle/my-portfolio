@@ -99,7 +99,7 @@ section h2 {
 
 .card-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -174,7 +174,7 @@ section h2 {
 }
 
 .gradient-border {
-  --border-width: 3px;
+  --border-width: 4px;
   position: relative;
   border-radius: var(--border-width);
 }
@@ -194,7 +194,7 @@ section h2 {
 }
 
 .gradient-border:hover {
-  --border-width: 3px;
+  --border-width: 4px;
   position: relative;
   border-radius: var(--border-width);
 }
@@ -272,7 +272,7 @@ section h2 {
   }
 
   #nav-links li {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 10px;
   }
 
   section {
@@ -284,7 +284,7 @@ section h2 {
     justify-content: flex-start;
   }
   .card-border {
-    margin: 5px 5px 10px 5px;
+    margin: 5px 5px 30px 5px;
   }
   .card-image-container img {
   }
