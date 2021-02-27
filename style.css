@@ -235,3 +235,60 @@ section h2 {
     background-position: 100% 50%;
   }
 }
+
+@media only screen and (max-width: 950px) {
+  #nav-bar {
+    margin: 20px 5vw 20px 5vw;
+  }
+
+  section {
+    margin: 50px 5vw 0px 5vw;
+  }
+
+  .card-border {
+    margin: 5px 5px 10px 5px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #nav-bar {
+    flex-direction: row;
+    margin: 0px 0vw 0px 0vw;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    transform: rotate(90deg) translate(0px, -100px);
+    width: 85vh;
+    transform-origin: 0% 0%;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+  }
+  #nav-links {
+    margin-top: 20px;
+  }
+
+  #nav-links li {
+    margin: 0px 0px 0px 0px;
+  }
+
+  section {
+    margin: 45px 12vw 0px 130px;
+    transform: translate(0px, -70px);
+  }
+
+  .card-container {
+    justify-content: flex-start;
+  }
+  .card-border {
+    margin: 5px 5px 10px 5px;
+  }
+  .card-image-container img {
+  }
+
+  #logo {
+    transform: scale(0.6) translate(0px, 20px) rotate(-90deg);
+  }
+}
