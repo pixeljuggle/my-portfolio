@@ -14,7 +14,8 @@
     #f1bd2e,
     #8ef71e,
     #25ee54,
-    #26f3f0
+    #26f3f0,
+    #3063f0
   );
 }
 .theme-dark {
@@ -62,6 +63,43 @@ body {
   text-decoration: none;
 }
 
+.logo-container {
+  position: relative;
+  height: 63px;
+  width: 110px;
+  background: transparent;
+  overflow: hidden;
+}
+.nav-icon {
+  background: var(--primary);
+  -webkit-mask: url(./assets/img/aw-logo.svg) no-repeat;
+  -webkit-mask-size: 110px 63px;
+  mask: url(./assets/img/aw-logo.svg) no-repeat;
+  mask-size: 110px 63px;
+  height: 63px;
+  width: 110px;
+}
+
+.nav-icon:hover {
+  z-index: -1;
+  background: var(--gradient);
+  background-size: 400% 400%;
+  animation: moveGradientLogo 4s alternate infinite;
+}
+
+
+@keyframes moveGradientLogo {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 #nav-bar {
   display: flex;
   flex-direction: row;
@@ -88,6 +126,8 @@ body {
 }
 
 #nav-links button {
+  padding:0px;
+  margin: 0px;
   background: none;
   background-color: transparent;
   border: none;
@@ -258,7 +298,7 @@ section h2 {
   }
 
   .card-border {
-    margin: 5px 5px 10px 5px;
+    margin: 5px 10px 40px 10px;
   }
 }
 
