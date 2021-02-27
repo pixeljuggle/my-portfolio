@@ -70,6 +70,7 @@ body {
   background-color: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 #nav-links a {
   padding: 15px 20px 15px 20px;
