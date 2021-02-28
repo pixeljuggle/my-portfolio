@@ -154,7 +154,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("https://raw.githubusercontent.com/pixeljuggle/my-portfolio/main/about-me/assets/img/gradient.jpg");
+  background-image: url(./assets/img/gradient.jpg);
 }
 
 /* sections and articles */
